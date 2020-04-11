@@ -9,4 +9,5 @@ for face_loc in face_locs:
 
     face_img = img[top:bottom, left:right]
     pil_img = Image.fromarray(face_img)
-    pil_img.show()
+    #pil_img.show()
+    pil_img.save(f'{top}.jpg')
